@@ -8,8 +8,9 @@ public class prueba {
         public static void main (String args []) {
                 Scanner sc = new Scanner(System.in);
                 boolean terminar = false;
-                int op, cuenta;
+                int op, cuenta, CI;
                 double cant;
+                String nombre, apellido;
                 final int MAX = 3;
                 registro banco[] = new registro[MAX];
                 leer(banco);
@@ -36,11 +37,23 @@ public class prueba {
                                         case 1:
                                                 System.out.println("**|RETIROS|**");
 
+                                                System.out.println("Ingrese su nombre: ");
+                                                nombre= sc.next();
+                                                System.out.println("Ingrese su apellido: ");
+                                                apellido= sc.next();
+                                                System.out.println("Ingrese su número de cedula: ");
+                                                CI= sc.nextInt();
                                                 System.out.println("¿Qué cantidad de dinero desea retirar?");
                                                 cant = sc.nextDouble();
                                                 break;
                                         case 2:
                                                 System.out.println("**|DEPOSITOS|**");
+                                                System.out.println("Ingrese su nombre: ");
+                                                nombre= sc.next();
+                                                System.out.println("Ingrese su apellido: ");
+                                                apellido= sc.next();
+                                                System.out.println("Ingrese su número de cedula: ");
+                                                CI= sc.nextInt();
                                                 System.out.println("¿Qué cantidad de dinero desea depositar?");
                                                 cant = sc.nextDouble();
                                                 System.out.println("Numero de cuenta a la que desea realizar el deposito");
