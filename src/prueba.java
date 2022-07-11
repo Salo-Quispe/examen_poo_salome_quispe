@@ -13,16 +13,6 @@ public class prueba {
                 String nombre, apellido;
                 final int MAX = 3;
                 registro banco[] = new registro[MAX];
-                /*leer(banco);
-
-                public static void leer(registro banco[]){
-                        int id = 0;
-                        try (BufferedReader br= new BufferedReader(new FileReader("C:\\Users\\ESFOT\\IdeaProjects\\prueba\\src\\registro.txt"))){
-                                String nombre;
-                                String apellido;
-                                int CI;
-                        }
-                }*/
 
                 while (terminar) {
                         System.out.println("Banco XXXXX");
